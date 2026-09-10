@@ -1,0 +1,20 @@
+name: Announcer
+version: ${project.version}
+main: com.metox.announcer.Announcer
+api-version: 1.13
+author: metox
+description: Belirli araliklarla otomatik chat duyurulari. Coslant.
+
+commands:
+  announcer:
+    description: Anlik duyuru gonder veya ayarlari yonet
+    usage: /announcer <mesaj|reload|next>
+    aliases: [duyuru, ac]
+
+permissions:
+  announcer.admin:
+    description: Duyurulari yonetebilir (reload, next)
+    default: op
+  announcer.say:
+    description: /duyuru <mesaj> ile anlik duyuru atabilir
+    default: op

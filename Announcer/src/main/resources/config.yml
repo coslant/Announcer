@@ -1,0 +1,23 @@
+# Announcer - coslant
+# interval saniye cinsinden. random true ise sirasiz, false ise sirayla gonderir.
+# Her duyuru birden fazla satir olabilir (alt alta - ile).
+# /duyuru <mesaj> ile anlik tek seferlik duyuru ekranin ortasinda title olarak cikar.
+# say.title = ust satir (buyuk), say.subtitle = alt satir. %player% ve %message% kullanilabilir.
+
+announcer:
+  interval: 300
+  random: false
+  prefix: ""
+  say:
+    title: "&cYetkili"
+    subtitle: "&f%message%"
+    fade-in: 10
+    stay: 60
+    fade-out: 10
+  messages:
+    - - "&7Sunucumuza hosgeldin! Iyi oyunlar."
+      - "&7Kurallari okumayi unutma: &f/kurallar"
+    - - "&aOyun ici &eEXP &akazanmak icin aktif ol!"
+    - - "&dMagazamiza goz at: &fstore.sunucun.net"
+      - "&7Destek olarak sunucuya katki saglayabilirsin."
+    - - "&6Discord: &fdiscord.gg/sunucun"
